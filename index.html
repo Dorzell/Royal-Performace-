@@ -20,26 +20,41 @@
       text-align: center;
     }
 
-    img.logo {
-      max-width: 200px;
+    header {
+      padding: 40px 20px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
+    .top-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
       margin: 20px auto;
-      display: block;
+      max-width: 1000px;
     }
 
-    .hero {
-      padding: 60px 20px 20px 20px;
+    .section-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 450px;
+      padding: 20px;
+      border-radius: 8px;
     }
 
-    .hero h2 {
-      font-size: 2.2rem;
+    .section-box h2 {
+      font-size: 1.8rem;
       color: #d4af37;
       margin-bottom: 10px;
     }
 
-    .hero p {
+    .section-box p {
       font-size: 1rem;
-      max-width: 600px;
-      margin: 0 auto;
       opacity: 0.85;
     }
 
@@ -67,8 +82,8 @@
     .cta {
       background-color: #d4af37;
       color: #0a0a0a;
-      padding: 15px 30px;
-      font-size: 1rem;
+      padding: 25px 50px;
+      font-size: 1.4rem;
       font-weight: bold;
       border: none;
       border-radius: 6px;
@@ -98,26 +113,28 @@
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Royal Performance Logo" class="logo" />
-
-  <section class="hero">
-    <h2>Train Like Royalty</h2>
-    <p>Elite personal training designed to unlock your peak performance — in the gym and in life.</p>
-  </section>
+  <header>
+    <h1>Royal Performance</h1>
+    <div class="top-sections">
+      <div class="section-box">
+        <h2>Training Services</h2>
+        <ul>
+          <li>🏋️‍♂️ 1-on-1 Personal Training (In-Person & Virtual)</li>
+          <li>📱 Online Fitness Programs & Nutrition Plans</li>
+          <li>📆 Weekly Coaching & Progress Tracking</li>
+        </ul>
+      </div>
+      <div class="section-box">
+        <h2>Train Like Royalty</h2>
+        <p>Elite personal training designed to unlock your peak performance — in the gym and in life.</p>
+      </div>
+    </div>
+  </header>
 
   <section id="about">
     <h3>About Royal Performance</h3>
     <p>At Royal Performance, we believe in more than just working out. We train with purpose, pushing past limits with tailored programs built to transform your body and mindset. Led by certified personal trainers who live the lifestyle and inspire results.</p>
-  </section>
-
-  <section id="services">
-    <h3>Training Services</h3>
-    <ul>
-      <li>🏋️‍♂️ 1-on-1 Personal Training (In-Person & Virtual)</li>
-      <li>📱 Online Fitness Programs & Nutrition Plans</li>
-      <li>📆 Weekly Coaching & Progress Tracking</li>
-    </ul>
-    <button class="cta" onclick="location.href='#contact'">Get Started Now</button>
+    <button class="cta" onclick="location.href='#contact'">Get Started</button>
   </section>
 
   <section id="contact">
@@ -131,4 +148,3 @@
   </footer>
 </body>
 </html>
-
